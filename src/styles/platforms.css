@@ -1,0 +1,55 @@
+/* Platform-specific CSS variable themes */
+
+.platform-dos {
+  --p-bg: #000000;
+  --p-text: #00ff41;
+  --p-accent: #00b32c;
+  --p-card-bg: #001400;
+  --p-border: #00ff41;
+  --p-muted: #007a1e;
+  --p-hover: #002800;
+  --p-glow: 0 0 8px #00ff41, 0 0 16px #00b32c;
+}
+
+.platform-spectrum {
+  --p-bg: #000000;
+  --p-text: #ffffff;
+  --p-accent: #ff0000;
+  --p-card-bg: #151515;
+  --p-border: #aaaaaa;
+  --p-muted: #888888;
+  --p-hover: #222222;
+  --p-glow: 0 0 8px #ffffff;
+}
+
+.platform-msx {
+  --p-bg: #1a1a2e;
+  --p-text: #4fc3f7;
+  --p-accent: #e91e63;
+  --p-card-bg: #0f1020;
+  --p-border: #4fc3f7;
+  --p-muted: #2a5f7a;
+  --p-hover: #1c2a40;
+  --p-glow: 0 0 8px #4fc3f7, 0 0 16px #0288d1;
+}
+
+.platform-amiga {
+  --p-bg: #2a2d6b;
+  --p-text: #ffffff;
+  --p-accent: #ff6600;
+  --p-card-bg: #1e2057;
+  --p-border: #ff6600;
+  --p-muted: #9999cc;
+  --p-hover: #333690;
+  --p-glow: 0 0 8px #ff6600, 0 0 16px #cc5200;
+}
+
+/* Utility classes using platform variables */
+.p-bg      { background-color: var(--p-bg); }
+.p-text    { color: var(--p-text); }
+.p-accent  { color: var(--p-accent); }
+.p-card    { background-color: var(--p-card-bg); }
+.p-border  { border-color: var(--p-border); }
+.p-muted   { color: var(--p-muted); }
+.p-hover:hover { background-color: var(--p-hover); }
+.p-glow    { box-shadow: var(--p-glow); }
